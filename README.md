@@ -191,14 +191,17 @@ print(f'Test Accuracy: {test_acc:.4f}')
 ```
 
 ### Save & Load Model
+```python
 # Save model
 model.save('FFD.keras')
 
 # Load model
 from tensorflow.keras.models import load_model
 model = load_model('FFD.keras')
+```
 
 ## Predict Forest Fire on New Image
+```python
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import matplotlib.pyplot as plt
@@ -216,9 +219,12 @@ def predict_fire(img_path):
     plt.title(f'Predicted: {predicted_class}')
     plt.axis('off')
     plt.show()
+```
 
 # Example usage:
+```python
 predict_fire('/kaggle/input/the-wildfire-dataset/the_wildfire_dataset_2n_version/test/nofire/sample.jpg')
+```
 
 ## Results & Evaluation
 The model is evaluated using accuracy and loss plots, confusion matrix, and test predictions.
