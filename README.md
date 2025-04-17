@@ -17,7 +17,7 @@ The dataset is sourced from Kaggle:
 - **Evaluation Metrics**: Accuracy, loss, and visualizations
 - **Visualization**: Displays dataset samples
 - **Colab Compatible**: Designed to run on Google Colab with GPU support
-- **Layers**Includes a custom-built CNN with Conv2D, MaxPooling2D, Dense, and Dropout layers
+- **Layers**: Includes a custom-built CNN with Conv2D, MaxPooling2D, Dense, and Dropout layers
 
 ## Setup and Installation
 ### Prerequisites
