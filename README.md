@@ -221,7 +221,7 @@ def predict_fire(img_path):
     plt.show()
 ```
 
-# Example usage:
+### Example usage:
 ```python
 predict_fire('/kaggle/input/the-wildfire-dataset/the_wildfire_dataset_2n_version/test/nofire/sample.jpg')
 ```
