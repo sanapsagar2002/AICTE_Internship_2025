@@ -154,7 +154,8 @@ model = Sequential([
 
 ## Training & Evaluation
 
-## Compile & Train
+### Compile & Train
+```python
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 history = model.fit(
@@ -164,8 +165,10 @@ history = model.fit(
     validation_data = val_generator,
     validation_steps = val_generator.samples // 32
 )
+```
 
-## Plot Accuracy & Loss
+### Plot Accuracy & Loss
+```python
 # Accuracy
 plt.plot(history.history['accuracy'])
 plt.plot(history.history['val_accuracy'])
@@ -179,12 +182,15 @@ plt.plot(history.history['val_loss'])
 plt.title('Model Loss')
 plt.legend(['Train', 'Validation'], loc='upper left')
 plt.show()
+```
 
- ## Evaluate on Test Data
+### Evaluate on Test Data
+```python
 test_loss, test_acc = model.evaluate(test_generator, steps=test_generator.samples // 32)
 print(f'Test Accuracy: {test_acc:.4f}')
+```
 
-Save & Load Model
+### Save & Load Model
 # Save model
 model.save('FFD.keras')
 
@@ -192,7 +198,7 @@ model.save('FFD.keras')
 from tensorflow.keras.models import load_model
 model = load_model('FFD.keras')
 
-Predict Forest Fire on New Image
+## Predict Forest Fire on New Image
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import matplotlib.pyplot as plt
@@ -219,10 +225,10 @@ The model is evaluated using accuracy and loss plots, confusion matrix, and test
 
 ## Future Improvements
 - Experiment with different architectures (ResNet, VGG16, EfficientNet)
-- ✅ Use Transfer Learning with pre-trained models like ResNet, VGG16, or EfficientNet
+- Use Transfer Learning with pre-trained models like ResNet, VGG16, or EfficientNet
+- Add a Streamlit/Flask web app for user interaction
+- Expand dataset diversity for better generalization
+- Integrate real-time fire detection using drone footage or live feeds
 
-✅ Add a Streamlit/Flask web app for user interaction
-
-✅ Expand dataset diversity for better generalization
-
-✅ Integrate real-time fire detection using drone footage or live feeds
+## License
+This project is licensed under the MIT License.
