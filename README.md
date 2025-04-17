@@ -1,6 +1,6 @@
 # AICTE_Internship_2025_Week_3
 
-# Forest Fire Detection using Deep Learning
+# Forest Fire Detection Using Deep Learning
 
 ## Overview
 This project focuses on detecting forest fires using a Deep Learning model trained on the **Wildfire Dataset** from Kaggle. The model is implemented using TensorFlow and Keras and runs in **Google Colab**.
