@@ -1,4 +1,4 @@
-# AICTE_Internship_2025_Week_3
+# AICTE_Internship_2025
 
 # Forest Fire Detection Using Deep Learning
 
